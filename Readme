@@ -1,0 +1,17 @@
+Programming Assignment 1: Chord Distributed Hash Table
+Ali Eker
+03.08.18
+
+Frameworks:
+- hashlib -> to compute the SHA-256 hash of keys
+- socket  -> to find the ip address of the machine that server.py runs on. This is used to compte NodeID 
+- logging -> for thrift error messages
+
+Python is used
+
+How to run:
+1 - set the PATH to /home/yaoliu/src_code/local/bin
+2 - thrift -gen py chord.thrift
+3 - run the server with server.py <port number>
+4 - run init with node.txt
+5 - run the client to test
